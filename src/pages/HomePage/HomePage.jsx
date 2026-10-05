@@ -11,7 +11,7 @@ function HomePage() {
   const [isLouder, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  asuns function searchMovies() {
+  async function searchMovies() {
     setError(null);
     setIsLoading(true);
 
