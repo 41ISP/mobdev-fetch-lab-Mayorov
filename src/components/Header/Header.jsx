@@ -23,6 +23,10 @@ function Header() {
             Главная
           </NavLink>
 
+          <a href="#" className="header__nav-link">
+            Избранное
+          </a>
+
           <NavLink
             to="/about"
             className={({ isActive }) =>

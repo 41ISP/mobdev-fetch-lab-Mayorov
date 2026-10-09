@@ -1,6 +1,6 @@
 import LikeButton from '../LikeButton/LikeButton';
 import './MovieCard.css';
-import { useNavigate } from '../LikeButton/LikeButton';
+import { useNavigate } from 'react-router-dom';
 
 function MovieCard() {
   return (
