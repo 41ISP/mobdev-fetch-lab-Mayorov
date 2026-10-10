@@ -19,7 +19,7 @@ function MovieDetailsPage() {
       setIsLoading(true);
 
       try {
-        const response = await fetch(`https://www.omdbapi.com/?apikey=${import.meta.env.VITE_OMDB_API_KEY}&i=${encodeURIComponent(imdbID)}`,);
+        const response = await fetch(`https://www.omdbapi.com/?apikey=${import.meta.env.VITE_OMDB_API_KEY}&i=${imdbID}`,);
 
         const data = await response.json();
 
@@ -28,7 +28,7 @@ function MovieDetailsPage() {
         } else {
           setMovie(data);
         }
-      } catch {
+      } catch (err) {
         setError('Не удалось связаться с сервером');
       } finally {
         setIsLoading(False);

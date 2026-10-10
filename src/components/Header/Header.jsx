@@ -18,14 +18,9 @@ function Header() {
             isActive
             ? "header__nav-link header__nav-link--active"
             : "header__nav-link"
-            }
-          >
+            }>
             Главная
           </NavLink>
-
-          <a href="#" className="header__nav-link">
-            Избранное
-          </a>
 
           <NavLink
             to="/about"
@@ -33,8 +28,7 @@ function Header() {
             isActive
             ? "header__nav-link header__nav-link--active"
             : "header__nav-link"
-            }
-          >
+            }>
             О проекте
           </NavLink>
         </nav>
